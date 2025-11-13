@@ -33,3 +33,17 @@ let menu = {
 multiplyNumeric(menu);
 console.log(menu);
 
+// Exercise 03
+
+function checkEmailId(str){
+    str = str.toLowerCase();        // convert the input string to all lowercase
+    let at = str.indexOf("@");
+    let dot = str.lastIndexOf(".");
+
+    return at > 0 && dot > at + 1 && dot < str.length - 1;
+} 
+
+console.log(checkEmailId("helloworld@gmail.com"));      // true
+console.log(checkEmailId("hello.world@gmailcom"));      // false because . came before @
+console.log(checkEmailId("helloworld@.com"));           // false because there's no character in between @ and .
+
