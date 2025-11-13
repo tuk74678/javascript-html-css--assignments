@@ -60,3 +60,23 @@ function truncate(str, maxlength){
 
 truncate("What I'd like to tell on this topic is:", 20);
 truncate("Hi everyone!", 20);
+
+// Exercise 05
+
+let styles = ["Jame", "Brennie"];       // create an initial array
+console.log(styles);
+
+styles.push("Robert");      // append Robert to the end
+console.log(styles);
+
+let midIndex = Math.floor(styles.length / 2);          // use Math.floor to round number down to the nearest integer
+styles[midIndex] = "Calvin";
+console.log(styles);
+
+styles.shift();         // remove the first element from the array
+console.log(styles);
+
+styles.unshift("Rose", "Regal");        // add more element at the beginning of the array
+console.log(styles);
+
+
