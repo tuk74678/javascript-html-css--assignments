@@ -47,3 +47,16 @@ console.log(checkEmailId("helloworld@gmail.com"));      // true
 console.log(checkEmailId("hello.world@gmailcom"));      // false because . came before @
 console.log(checkEmailId("helloworld@.com"));           // false because there's no character in between @ and .
 
+// Exercise 04
+
+function truncate(str, maxlength){
+    let strLen = str.length;
+
+    if(strLen > maxlength){
+        str = str.slice(0, maxlength - 1) + "...";
+    }
+    console.log(str);
+}
+
+truncate("What I'd like to tell on this topic is:", 20);
+truncate("Hi everyone!", 20);
