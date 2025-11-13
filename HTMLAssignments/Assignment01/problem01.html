@@ -62,13 +62,26 @@
         }
 
         .nested-table{
-            height: auto;
-            width: auto;
+            height: 100%;
+            width: 100%;
             border-collapse: separate;
             border-spacing: 3px;
             text-align: center;
         }
 
+        button{
+            height: 100%;
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            color: blue;
+            
+        }
+
+        button:hover {
+            background-color: #ddd;
+        }
 
     </style>
 </head>
@@ -197,7 +210,66 @@
         </tr>
     </table>
 
+    <h2>Problem 5. Life in Antra Keyboard</h2>
 
-
+    <table class="table-antra-life">
+        <tr>
+            <th colspan="4">
+                <button onclick="window.open('https://www.antra.com/')">Antra LIFE</button>
+            </th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="window.open('https://www.google.com')">GOOGLE</button>
+            </td>
+            <td colspan="2">
+                <button onclick="window.open('https://www.github.com')">Github</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="window.open('https://www.facebook.com')">Facebook</button>
+            </td>
+            <td>
+                <button onclick="window.open('https://www.gmail.com')">GMail</button>
+            </td>
+            <td>
+                <button onclick="window.open('https://www.youtube.com')">YouTube</button>
+            </td>
+            <td>
+                <button>2048</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="window.open('https://www.doordash.com')">Food</button>
+            </td>
+            <td colspan="2">
+                <button onclick="window.open('https://www.ea.com')">Game</button>
+            </td>
+            <td>
+            <table class="nested-table">
+                <tr>
+                    <td>
+                        <button onclick="window.open('https://www.instagram.com')">Social Life</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="window.open('https://www.spotify.com')">Sleep</button>
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <button onclick="window.open('https://www.coronausa.com')">Beer</button>
+            </td>
+            <td>
+                <button onclick="window.open('https://www.fifa.com')">WC</button>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
