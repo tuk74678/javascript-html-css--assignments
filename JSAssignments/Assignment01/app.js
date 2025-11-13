@@ -1,4 +1,5 @@
 // Excercise 01
+
 let salaries = {
     John : 100,
     Ann : 160,
@@ -12,4 +13,23 @@ for (let s in salaries){
 }
 
 console.log("The total salaries for the team is: ", sum);
+
+// Exercise 02
+
+function multiplyNumeric(obj){
+    for(let i in obj){
+        if(typeof obj[i] === 'number'){             // check if the object property is a number then we multiply by 2
+            obj[i] *= 2;
+        }
+    }
+}
+
+let menu = {
+    width: 200,
+    height: 300,
+    title: "My menu"
+};
+
+multiplyNumeric(menu);
+console.log(menu);
 
