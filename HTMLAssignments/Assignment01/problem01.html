@@ -40,6 +40,28 @@
         padding: 5px;
         }
 
+        .table-antra-life{
+            height: 400px;
+            width: 25%;
+            border: 1px solid black;
+            table-layout: fixed;
+            border-collapse: separate;
+            border-spacing: 3px;
+            text-align: center;
+            margin: 0 auto 30px;
+        }
+
+        .table-antra-life th {
+            font-size: 30;
+            font-weight:  900;
+        }
+
+        .table-antra-life th, .table-antra-life td {
+        border: 1px solid black;
+        padding: 5px;
+        }
+
+
     </style>
 </head>
 <body>
@@ -117,5 +139,49 @@
     </table>
 
     <h2>Problem 3. Nested Tables</h2>
+
+    <table class="table2">
+        <tr>
+            <th rowspan="3"><img src="/Assignment01/images/AntraLogo.webp" alt="logo" width="150"></th>
+        </tr>
+        <tr>
+            <th>Software</th>
+        </tr>
+         <tr>
+            <th>Developer</th>
+        </tr>
+    </table>
+
+
+    <h2>Problem 4. Life in Antra</h2>
+
+    <table class="table-antra-life">
+        <tr>
+            <th colspan="4">Antra LIFE</th>
+        </tr>
+        <tr>
+            <td colspan="2">Google</td>
+            <td colspan="2">Github</td>
+        </tr>
+        <tr>
+            <td>FB</td>
+            <td>GMail</td>
+            <td>YouTube</td>
+            <td>2048</td>
+        </tr>
+        <tr>
+            <td>Food</td>
+            <td colspan="2">Game</td>
+            <td>Social Life</td>
+            <td>Sleep</td>
+        </tr>
+        <tr>
+            <td colspan="3">Beer</td>
+            <td>WC</td>
+        </tr>
+    </table>
+
+
+
 </body>
 </html>
