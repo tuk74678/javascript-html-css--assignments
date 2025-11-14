@@ -1,4 +1,10 @@
 
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -88,4 +94,24 @@ nav ul li a {
 
 nav ul li ul li a:hover { 
     color: rgb(7, 77, 142);              /* Sub-item text color on hover */
+}
+
+.content {
+    flex: 1; /* Takes all remaining space so footer stays at bottom */
+}
+
+/* Footer */
+
+footer {
+    background-color: #2a2b34;
+    color: white;
+    padding: 40px 20px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
 }
