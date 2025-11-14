@@ -1,4 +1,9 @@
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
 header{ 
     display: flex;                        /*   display all items in one row */
     align-items: center;    
@@ -24,8 +29,8 @@ header{
 }
 
 .search input {
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 5px 10px;  
+    border-radius: 5px;             /* Rounds the corners (5px) */
     border: 1px solid #ccc;
 }
 .search button {
@@ -33,8 +38,8 @@ header{
     border: none ;
     background-color: white;
     color: white;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 5px;            /* Rounds the corners (5px) */
+    cursor: pointer;               /* Changes cursor to hand icon on hover.*/
 }
 .search button:hover {
 background-color: #e3eaee;
@@ -49,9 +54,41 @@ nav ul {
     gap: 25px;              /* Space between each menu item */
 }
 
+/* Dropdown */
+nav ul li {
+    position: relative;   /* This makes dropdown position relative to the menu item */
+} 
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 10px 0;
+    list-style: none;
+    top: 150%;
+    left: 0;
+    min-width: 150px;
+    border-radius: 5px;
+}
+nav ul li ul li {
+    width: 100%;
+}
+nav ul li ul li a {
+    display: block;
+    color: black; 
+    padding: 10px;
+}
+nav ul li:hover ul {
+    display: block;
+}
+
 nav ul li a {
     text-decoration:none;       /* Removes underline from links */
     color: white;             
     font-size: 16px;        
     padding: 8px;               /* Adds clickable space around text */
+}
+
+nav ul li ul li a:hover { 
+    color: rgb(7, 77, 142);              /* Sub-item text color on hover */
 }
