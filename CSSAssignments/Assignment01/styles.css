@@ -107,6 +107,7 @@ footer {
     color: white;
     padding: 40px 20px 20px 20px;
     font-family: Arial, sans-serif;
+    min-height: 150px;
 }
 
 .footer-container {
@@ -114,4 +115,22 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+}
+
+.footer-bottom {
+    text-align: left;
+    margin-top: 30px;
+    font-size: 14px;
+    border-top: 1px solid #ffffff50;
+    padding-top: 10px;
+}
+
+.footer-section {
+    flex: 1;                 /* Each section takes equal width */
+    margin: 0 10px;          /* Small space between columns */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
 }
