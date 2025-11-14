@@ -1,0 +1,57 @@
+
+header{ 
+    display: flex;                        /*   display all items in one row */
+    align-items: center;    
+    justify-content: space-between;       /*  Spreads items to left & right, with space between them. */
+    padding: 10px 20px;
+    color: white;
+    /* Added Linear Gradient Top to Bottom */
+    height: 100px;
+    background: -webkit-linear-gradient(#101357,rgb(25, 63, 177));
+    background: -o-linear-gradient(#101357,rgb(25, 63, 177));
+    background: -moz-linear-gradient(#101357,rgb(25, 63, 177));
+    background: linear-gradient(#101357,rgb(25, 63, 177));
+}
+
+.logo img{
+    height: 50px;
+}
+
+.search {
+    display: flex;              
+    align-items: center;
+    gap: 2px;
+}
+
+.search input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.search button {
+    padding: 4px 10px;
+    border: none ;
+    background-color: white;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.search button:hover {
+background-color: #e3eaee;
+}
+
+nav ul {
+    list-style: none;       /* Removes bullet points */
+    color: white;         
+    margin: 0;              /* Remove default margin */
+    padding: 0;             /* Remove default padding */
+    display: flex;          /* Makes the list horizontal */
+    gap: 25px;              /* Space between each menu item */
+}
+
+nav ul li a {
+    text-decoration:none;       /* Removes underline from links */
+    color: white;             
+    font-size: 16px;        
+    padding: 8px;               /* Adds clickable space around text */
+}
