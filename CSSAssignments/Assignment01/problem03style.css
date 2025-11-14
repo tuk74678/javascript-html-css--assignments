@@ -1,0 +1,79 @@
+/*  Set the font for the whole web page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;          
+    padding: 0;
+    height: 100%;    
+}
+
+/* Make the page container fill the viewport height */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* full viewport height */
+}
+
+h2{
+    color: brown;
+}
+
+h3{
+    color: #2370e4;
+    margin: 50px;
+}
+
+.logo img{
+    height: 50px;
+}
+
+header{ 
+    display: flex;                        /*   display all items in one row */
+    align-items: center;    
+    justify-content: end;       /*  Spreads items to left & right, with space between them. */
+    padding: 10px 20px;
+    color: white;
+    /* Added Linear Gradient Top to Bottom */
+    height: 100px;
+    background: linear-gradient(#101357,rgb(69, 103, 207));
+}
+
+header nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    background-color: #e19d0b;  /* bright yellow */
+    color: white;               /* white text */
+    padding: 10px 20px;         /* space inside the button */
+    text-decoration: none;      /* remove underline */
+    border-radius: 5px;         /* rounded corners */
+    font-weight: bold;
+}
+
+/* Main content */
+main {
+    flex: 1;          /* take up remaining space below header */
+    background-color: lightgray; /* light gray */
+    padding: 20px;           /* optional padding */
+}
+
+.columns-container {
+    display: flex;
+    gap: 20px;                             /* space between columns */
+}
+
+.column {
+    background-color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
